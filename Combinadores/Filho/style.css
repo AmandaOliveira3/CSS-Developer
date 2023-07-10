@@ -1,0 +1,18 @@
+/*div p {
+    background: lightgreen;
+}
+
+div > p {
+    color: blue;
+}*/
+
+div + p {
+    color: red;
+}
+/* pega o elemento que está "ao lado" da div
+é a primeira tag a aparecer depois do fechamento da div*/
+
+.fundo-verde ~ p {
+    background: lightgreen;
+}
+
