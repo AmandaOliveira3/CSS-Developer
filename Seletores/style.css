@@ -1,12 +1,13 @@
-h1{
-    background: darkblue;
-    color: lightgreen;
+*{
+    font-weight: bold;
 }
 
-div{
-    background: lightblue;
+.seletores-mais-comuns{
+    color: red;
 }
 
-li{
-    background: lightgreen;
+.texto-maiusculo{
+    text-transform: uppercase;
+
 }
+

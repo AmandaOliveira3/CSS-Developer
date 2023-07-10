@@ -1,0 +1,16 @@
+[title="Netflix"]{
+    color: red;
+
+}
+[title="Prime"]{
+    color: lightblue;
+
+}
+[title="HBOMax"]{
+    color: gray;
+
+}
+[title~="Streaming"]{
+    color: violet;
+
+}
