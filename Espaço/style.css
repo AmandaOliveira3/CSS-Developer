@@ -1,0 +1,42 @@
+/*#div-01 {
+    background: lightblue;
+    width: 200px;
+    height: 300px;
+}
+
+#div-02 {
+    background: lightgreen;
+    height: inherit;
+}*/
+/*
+button {
+    background: pink;
+    max-width: 500px;
+    min-height: 300px;
+    max-height: 500px;
+
+}*/
+
+div {
+    width: 200px;
+    height: 200px;
+    color: white;
+    
+}
+
+#elemento-01 {
+    background: orange;
+    padding: 20px 40px 50px 60px;
+    /* O margin pode ser negativo
+    com dois valores: primeiro valor - cima, segundo valor - lados
+    com tres valores: primeiro valor - cima, segundo valor - lados, terceiro valor - embaixo
+    com quatro valores: cima, direita, embaixo , esquerda*/
+}
+
+#elemento-02 {
+    padding: 20px;
+    background: rebeccapurple;
+    box-sizing: border-box;
+   
+    
+}
