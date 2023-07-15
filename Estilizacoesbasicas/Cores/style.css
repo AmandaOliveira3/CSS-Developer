@@ -1,0 +1,35 @@
+#cores-predefinidas{
+     color: blue;
+}
+/*li {
+  background-color: aqua;
+}
+
+#palavra-chave {
+   background-color: transparent;
+}*/
+
+ #palavra-chave {
+  color: deeppink;
+  border: 2px solid currentColor;
+  }
+ #RGB {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    }
+
+#RGBA {
+    color: rgba(255, 0, 0,1);
+}
+#Hexa {
+    color: #00FF00;
+}
+#Hexa-transparencia{
+    color: #00FF008F;
+}
+#HSL {
+    color: hsl(270, 100%, 50%)
+}
+#HSLA {
+    color: hsla(0, 100%, 50%,0.7)
+}
