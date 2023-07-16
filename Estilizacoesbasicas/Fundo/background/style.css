@@ -1,0 +1,20 @@
+div {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+
+
+.exemplo {
+    width: 300px;
+    height: 300px;
+    color: white;
+    border: 15px dashed palegreen;
+    padding: 30px;
+    font-size: 40px;
+    font-weight: 900;
+       
+    background: url('/Fundo/computador.svg') blue;
+
+}
+
