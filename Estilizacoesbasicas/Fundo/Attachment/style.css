@@ -1,0 +1,32 @@
+body {
+    height: 200vh;
+}
+
+div {
+    margin-bottom: 30px;
+}
+
+.exemplo {
+    width: 300px;
+    height: 300px;
+    background-image: url('/Fundo/foto-vertical-de-uma-estrada-com-montanhas-magnificas-sob-o-ceu-azul-capturada-na-california.jpg');
+    border: 2px solid red;
+    background-size: cover;
+    overflow: auto;
+}
+
+#fixed {
+    background-attachment: fixed;
+    /*a imagem sobe e desce de acordo com a pagina */
+}
+
+#scroll {
+    background-attachment: scroll;
+    /* quando se sobe e desce o texto contido na div a imagem permanece fixa*/
+}
+
+#local {
+    background-attachment: local;
+    /* imagem e texto contidos na div descem e sobem junto */
+}
+
