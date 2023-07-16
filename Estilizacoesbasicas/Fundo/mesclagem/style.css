@@ -1,0 +1,52 @@
+div {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+
+
+.exemplo {
+    width: 300px;
+    height: 300px;
+    color: white;
+    border: 15px dashed palegreen;
+    background-color: blue;
+    background-position: center;
+    background-image: url('/Fundo/foto-vertical-de-uma-estrada-com-montanhas-magnificas-sob-o-ceu-azul-capturada-na-california.jpg');
+    padding: 30px;
+    font-size: 40px;
+    font-weight: 900;
+    
+}
+
+#darken {
+    background-blend-mode: darken;
+}
+
+#lighten {
+    background-blend-mode: lighten;
+}
+
+#screen {
+    background-blend-mode: screen;
+}
+
+#overlay {
+    background-blend-mode: overlay;
+}
+
+#multiply {
+    background-blend-mode: multiply;
+}
+
+#hue {
+    background-blend-mode: hue;
+}
+
+#difference {
+    background-blend-mode: difference;
+}
+
+#luminosity {
+    background-blend-mode: luminosity;
+}
