@@ -1,0 +1,40 @@
+div {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+
+
+.exemplo {
+    width: 300px;
+    height: 300px;
+    color: white;
+    border: 15px dashed palegreen;
+    background-size: 100% 100%;
+    background-color: palevioletred;
+    background-image: url('/Fundo/foto-vertical-de-uma-estrada-com-montanhas-magnificas-sob-o-ceu-azul-capturada-na-california.jpg');
+    padding: 30px;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#padding-box {
+    background-clip: padding-box;
+/* caso não declare o css vai usar o padding-box*/
+/*não cobre a area da borda mas ocupa a area interna*/
+}
+
+#border-box {
+    background-clip: border-box;
+    /*ocupa a area do padding e tambem a area da borda*/
+}
+
+#content-box {
+    background-clip: content-box;
+    /*não cobre a area do padding e a area da borda*/
+}
+
+#text {
+    -webkit-background-clip: text;
+    color: transparent;
+}
