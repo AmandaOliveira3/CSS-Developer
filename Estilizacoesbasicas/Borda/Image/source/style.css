@@ -1,0 +1,18 @@
+
+.exemplo{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    border: 30px solid;
+}
+
+#exemplo-1{
+    border-image-source: url('/Estilizacoesbasicas/Borda/Image/source/star.png') ;
+   
+}
+
+#exemplo-2{
+    border-image-source: linear-gradient(purple, lightblue);
+    /*aceita o valor none*/
+}
