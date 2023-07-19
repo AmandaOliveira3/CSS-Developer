@@ -3,18 +3,25 @@
     background: black;
     width: 200px;
     height: 200px;
-    margin-bottom: 10px;
+    margin: 50px auto;
     border: 30px solid;
+}
+
+#exemplo-resumido {
+    border-image: url('/Estilizacoesbasicas/Borda/Image/source/star.png') 169 / 10px /1 round;
 }
 
 #exemplo-1{
     border-image-source: url('/Estilizacoesbasicas/Borda/Image/source/star.png') ;
-    border-image-repeat: repeat;
+    border-image-repeat: stretch; /*space repeat round*/
     border-image-slice: 500;
+    border-image-width: 10px 20px 30px 40px;/*aceita a palavra auto*/
+    border-image-outset: 4;
 }
 
 #exemplo-2{
     border-image-source: linear-gradient(purple, lightblue);
     border-image-slice: 19;
+    border-image-outset: 30px 10px 25px 20px;
     /*aceita o valor none*/
 }
