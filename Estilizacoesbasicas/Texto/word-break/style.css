@@ -1,0 +1,17 @@
+.exemplo {
+    width: 100px;
+    color: black;
+    background-color: aquamarine;
+}
+
+#normal {
+    word-break: normal;
+}
+
+#break-all {
+    word-break: break-all;
+}
+
+#keep-all {
+    word-break: keep-all;
+}

@@ -1,0 +1,11 @@
+h1 + p{
+    text-decoration-line: overline;
+    text-decoration-style: double;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+    text-decoration: underline dashed purple 3px;
+}
+
+a {
+    text-decoration: none;
+}
