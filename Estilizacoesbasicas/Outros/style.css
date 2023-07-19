@@ -1,4 +1,11 @@
-p{
-    text-transform: capitalize;
-    /*uppercase inherit*/
+.exemplo {
+    background-color: purple;
+    border: 5px solid orange;
+    color: white;
+    padding: 20px;
+
+}
+
+.exemplo img {
+    width: 50%;
 }

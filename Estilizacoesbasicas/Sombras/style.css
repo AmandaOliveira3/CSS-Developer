@@ -1,4 +1,16 @@
-p{
-    text-transform: capitalize;
-    /*uppercase inherit*/
+img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin: 20px auto;
+   /* filter: drop-shadow(10px 10px 5px gray);*/
+    box-shadow:  10px 10px 10px 7px blue;
+
+}
+
+h2 {
+    color: deeppink;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 10px 10px 5px purple;
 }
