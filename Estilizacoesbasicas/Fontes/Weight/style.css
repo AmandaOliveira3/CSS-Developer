@@ -1,0 +1,21 @@
+
+#exemplo{
+    font-weight: 900;
+}
+
+#normal{
+    font-weight: normal;
+}
+
+#bold{
+    font-weight: bold;
+}
+
+div{
+    font-weight: bold;
+}
+
+div p{
+    font-weight: bolder;
+}
+
