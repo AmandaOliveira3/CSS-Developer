@@ -1,0 +1,21 @@
+
+#normal{
+    font-stretch: normal;
+}
+
+#semi-expanded{
+    font-stretch: semi-expanded;
+    
+}
+
+#expanded{
+    font-stretch: expanded;
+}
+
+#extra-expanded{
+    font-stretch: extra-expanded;
+}
+
+#ultra-expanded{
+    font-stretch: ultra-expanded;
+}
