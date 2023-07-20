@@ -1,0 +1,19 @@
+p {
+    margin: 0;
+}
+
+div {
+    padding: 10px;
+}
+
+.exemplo-01 {
+    background-color: yellow;
+}
+
+.exemplo-02 {
+    background-color: lightcoral;
+}
+
+.exemplo-03 {
+    background-color: aquamarine;
+}

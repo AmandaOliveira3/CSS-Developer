@@ -1,0 +1,16 @@
+.exemplo-pixel {
+    font-size: 30px;
+    background-color: lightblue;
+    width: 300px;
+}
+
+.exemplo-porcentagem {
+    background-color: lightcoral;
+    width: 50%;
+}
+
+#elemento-pai {
+    width: 500px;
+    font-size: 40px;
+    border: 5px solid black;
+}
