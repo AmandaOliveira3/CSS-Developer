@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+}
+
+.nav-menu > img{
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+
+.nav-search {
+    width: 26rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#search-box{
+    height: 2rem;
+    width: 25rem;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #dfdddd;
+    border: 1px solid #777;
+}
+
+#search-box > input{
+    border: 1px solid #777;
+    border-radius: 100px 0 0 100px;
+    height: 2rem ;
+    width: 20rem;
+    outline: none; 
+    padding-left: 4px;
+}
+
+
+.bi-mic-fill, .bi-search{
+    cursor: pointer;
+    margin-left: 1.2rem;
+
+}
+
+.nav-profile > img{
+    height: 26px;
+    width: 26px;
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+
+.nav-profile > img:hover{
+    border-radius: 50%;
+    background-color: #c6c6c6;
+}
+
+main{
+    display: flex;
+    margin: 2rem 1rem;
+}
+
+#watching-video{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   width: 65vw;
+   margin: 0 1rem 0 1.5rem;
+    
+}
+#video-actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 2.5rem;
+}
+
+#video-actions > button{
+    background-color: #000;
+    color: #fff;
+    border-radius: 30px;
+    width: 7rem;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+#video-actions > img{
+    margin: 1rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#Channel-infos{
+    display: flex;
+    gap: 15px;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+#channel-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#video-description{
+    font-size: 14px;
+    color: #515151;
+}
+
+
+aside{
+    width: 25vw;
+}
+
+.recomend-video{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.recomendacao-video:hover, #video-actions > img:hover{
+    background-color: #f3f0f0;
+}
+
+.descricao-recomendacao-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+p{
+    color: #515151;
+    font-size: 12px;
+}
+
+
+.titulo-recomendacao-video, #Channel, .video-informations{
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}

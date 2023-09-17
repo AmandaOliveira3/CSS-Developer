@@ -16,7 +16,7 @@ body {
     background-size: cover;
     height: 600px;
     border-bottom: 1px solid #33A8DB80;
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('/LandingPage/assets/images/banner.png');
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('/assets/images/banner.png');
 }
 
 .banner-content{
@@ -62,15 +62,16 @@ h1 {
 
 
 button {
+    background-color: transparent;
     color: #31A8DD;
     border-image: linear-gradient(to bottom,#3BA1CD, #1572B7) 1;
     font-size: 1.0rem;
     width: 315px;
     height: 55px;
-    background-color: transparent;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #course-content{
@@ -118,7 +119,7 @@ p {
     border-bottom: 1px solid #33A8DB80;
     height: 550px;
     text-shadow: 3px 2px 0px #33A8DB;
-    background-image: url('/LandingPage/assets/images/woman-code.png');
+    background-image: url('./assets/images/woman-code.png');
     background-size: cover;
     background-attachment: fixed;
 }

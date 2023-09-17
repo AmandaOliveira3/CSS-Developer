@@ -1,0 +1,22 @@
+.container {
+    background: palegreen;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    
+}
+
+.item {
+    background: orange;
+    margin: 10px;
+}
+
+#container-01 {
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#container-02 {
+    flex-flow: column wrap-reverse;
+    height: 300px;
+}
