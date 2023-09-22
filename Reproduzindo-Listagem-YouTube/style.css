@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 18vw repeat(4,1fr);
+    grid-template-rows: 8vh repeat(3,1fr);
+    grid-template-areas: "nav nav nav nav nav"
+                        "sidebar main main main main "
+                        "sidebar main main main main "
+                        "sidebar main main main main ";
+    /*grid-template: repeat(3,200px)/ 56px repeat(4,200px);
+    */
+
+}
+
+nav{
+    background-color: #fff;
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.nav-menu{
+    justify-self:self-start;
+    margin-left: 2rem;
+
+}
+.nav-menu > img{
+    cursor: pointer;
+    margin: 0 1rem;
+}
+
+.nav-search {
+    width: 30rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#search-box{
+    height: 2rem;
+    width: 24rem;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #dfdddd;
+    border: 1px solid #777;
+}
+
+#search-box > input{
+    border: 1px solid #777;
+    border-radius: 100px 0 0 100px;
+    height: 2rem ;
+    width: 20rem;
+    outline: none; 
+    padding-left: 4px;
+}
+
+
+.bi-mic-fill, .bi-search{
+    cursor: pointer;
+    margin-left: 1.2rem;
+
+}
+.nav-profile > img{
+    height: 26px;
+    width: 26px;
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+
+.nav-profile > img:hover{
+    border-radius: 50%;
+    background-color: #c6c6c6;
+}
+
+aside{
+    grid-area: sidebar;
+    display: grid;
+    grid-template-rows: repeat(10,24px);
+    justify-items: start;
+    align-items: center;
+    text-align: center; 
+    gap: 15px;
+    padding: 10px;
+}
+.item-sidebar{
+    display: flex; /* Adicione flex para alinhar conteúdo verticalmente */
+    align-items: center;
+    cursor: pointer;
+}
+.item-sidebar > img{
+    width: 24px;
+    height: 24px;
+    justify-self: start;
+    align-self: center;
+    margin-right: 0.5rem;
+}
+
+main{
+   grid-area: main;
+   display: grid;
+   grid: repeat(3,30vh) / repeat(4,20vw);
+
+}
+
+.menu-item > img{
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+}
+
+.menu-item > img:hover, .item-sidebar:hover{
+    background-color: #f3f0f0;
+}
+
