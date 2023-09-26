@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: auto;
+    padding: 100px 260px;
+    background-size: cover;
+    background-image: url('./assets/Header\ Background.png');
+    background-position: contain;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0 5vw;
+    gap: 24px;
+}
+
+.header-content>h1 {
+    font-family: 'Luckiest Guy', cursive;
+    color: #fff;
+    padding: 0 17%;
+    font-weight: 400;
+    font-size: 56px;
+}
+
+.header-content>p {
+    color: #fff;
+    text-align: center;
+}
+
+.template-button {
+    border-radius: 28px;
+    padding: 10px 40px;
+    flex-shrink: 0;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+#button-download {
+    background-color: #fff;
+    color: #23272A;
+}
+
+#button-web {
+    color: #fff;
+    background-color: #23272A;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: normal;
+}
+
+.flex {
+    display: flex;
+    /* padding: 40px 24px; small*/
+    padding: 40px 13vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 16px;
+
+}
+
+.section-content01 {
+    flex: 1;
+    gap: 16px;
+}
+
+.text-section>h3 {
+    color: #23272A;
+    font-family: Open Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.text-section>p {
+    color: #23272A;
+    font-family: Open Sans;
+    font-style: normal;
+    line-height: normal;
+}
+
+.section-content02,
+.section-content04 {
+    background: #F6F6F6;
+    flex: 1;
+}
+
+section>img {
+    width: 100%;
+}
+
+section>h1 {
+    color: #23272A;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+section>h3 {
+    color: #23272A;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.section-content04 {
+    flex-direction: column;
+    padding: 40px 18vw;
+}
+
+.section-content04>h1 {
+    font-family: 'Luckiest Guy', cursive;
+    padding: 0 12%;
+    font-weight: 400;
+    font-size: 56px;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #23272A;
+    align-items: center;
+    height: 140px;
+    padding: 36px 0;
+}
+
+@media screen and (max-width: 968px) {
+    header {
+        padding: 40px 24px;
+        background-position: center;
+    }
+    .header-content>h1 {
+        font-size: 32px;
+       
+        padding: 0;
+        width: 60%;
+    }
+
+    .flex {
+        gap: 27px;
+        padding: 40px 24px;
+    }
+
+    .text-section>h3 {
+        font-size: 32px;
+    }
+
+    section>h1{
+        font-size: 32px;
+        width: 100%;
+    }
+
+    section>img{
+        max-width: 65%;
+    }
+
+    .section-content04 > p{
+        padding: 0 8vw;
+    }
+}
+
+@media screen and (max-width: 728px) {
+    .section-content01{
+        flex-direction: column;
+        gap: 27px;
+    }
+  
+}
+@media screen and (max-width: 428px) {
+    header {
+        padding: 40px 24px;
+        background-position: center;
+        background-image: url('./assets/Header-Background-Mobile.png');
+    }
+
+    .template-button {
+        width: 100%;
+    }
+
+    .header-content{
+        justify-content: start;
+    }
+
+    .header-content>h1 {
+        font-size: 32px;
+        text-align: left;
+        padding: 0;
+        width: 60%;
+    }
+
+    .flex {
+        gap: 27px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 24px;
+    }
+
+    .text-section>h3 {
+        font-size: 24px;
+    }
+
+    section>img{
+        max-width: 100%;
+    }
+
+    section>h1{
+        font-size: 32px;
+        width: 100%;
+    }
+}
