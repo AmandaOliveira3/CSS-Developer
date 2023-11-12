@@ -18,7 +18,6 @@ header {
     padding: 100px 260px;
     background-size: cover;
     background-image: url('./assets/Header\ Background.png');
-    background-position: contain;
 }
 
 .header-content {
@@ -26,6 +25,7 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
     flex-wrap: wrap;
     text-align: center;
     padding: 0 5vw;
@@ -85,7 +85,7 @@ p {
 }
 
 .section-content01 {
-    flex: 1;
+    flex-grow: 1;
     gap: 16px;
 }
 
@@ -96,6 +96,7 @@ p {
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    flex-grow: 1;
 }
 
 .text-section>p {
@@ -103,6 +104,7 @@ p {
     font-family: Open Sans;
     font-style: normal;
     line-height: normal;
+    flex-grow: 1;
 }
 
 .section-content02,
@@ -142,6 +144,7 @@ section>h3 {
     padding: 0 12%;
     font-weight: 400;
     font-size: 56px;
+    flex-grow: 1;
 }
 
 
@@ -163,7 +166,7 @@ footer {
     }
     .header-content>h1 {
         font-size: 32px;
-       
+        flex-grow: 1;
         padding: 0;
         width: 60%;
     }
