@@ -1,4 +1,4 @@
-@import url('./style.css');
+@import url('./global.css');
 
 body {
     background-image: url(../images/background-movies-series.png);
@@ -8,48 +8,7 @@ body {
     color: #fff;
 }
 
-.nav-bar {
-    width: 100%;
-    background: var(--nav-bg-color);
-    display: flex;
-    justify-content:space-between ;
-    padding: 12px 1rem;
-    align-items: center;
-    min-height: 6vh;
-}
-
-.menu-logo{
-    width: 150px;
-    max-width: 180px;
-}
-
-.text-nav{
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--text-color);
-    font-weight: 700;
-    font-size: 0.75rem;
-    text-decoration: none;
-    margin-right: 12px;
-    cursor: pointer;
-}
-
-.btn-nav-bar{
-    background-color: var(--tertiary-color);
-    padding: 8px 26px;
-    border-radius: 50px; 
-    border: none;
-    cursor: pointer;
-    margin-left: 5px;
-    transition: background 1s, color 1s;
-}
-
-.btn-nav-bar:hover {
-    background-color: var(--btn-link-bg-color);
-    color: var(--btn-link-color);
-}
-
-.main-content{
+.main-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,19 +18,19 @@ body {
     width: 100%;
 }
 
-#form-login{
+#form-login {
     width: 100%;
     max-width: 800px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     background-color: var(--form-bg-color);
     gap: 24px;
     padding: 40px;
 }
 
-#form-login >h1{
+#form-login>h1 {
     text-transform: uppercase;
     font-size: 1.2rem;
     letter-spacing: 2px;
@@ -79,7 +38,7 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.input-login{
+.input-login {
     border-radius: 8px;
     background: var(--form-field-bg-color);
     border: var(--form-field-border) !important;
@@ -90,29 +49,17 @@ body {
     width: 100%;
 }
 
-.input-login::placeholder{
+.input-login::placeholder {
     color: var(--form-field-plaehoclder);
 }
+
 .input-login:invalid {
     border-color: var(--form-field-error);
 }
 
-.user-actions{
+.user-actions {
     margin-top: 24px;
     text-align: left;
-}
-
-button{
-    padding: 15px 42px;
-    border-radius: 100px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 4px;
-    font-weight: 700;
-    border: none;
-    cursor: pointer;
-    background: var(--tertiary-color);
-    color: #fff;
 }
 
 .login-link {
@@ -123,78 +70,17 @@ button{
     cursor: pointer;
 }
 
-.button-transition {
-    background: var(--btn-bg-color-gradient);
-    outline: 3px solid transparent;
-    transition: background 1s, outline 1s, transform 1s;
-    background-size: 250%;
-}
+@media screen and (max-width: 480px) {
+    body {
+        height: auto;
+    }
 
-.button-transition:hover {
-    background-color: transparent;
-    background-position: 100%;
-    outline: 2px solid var(--secondary-color);
-    transform: scale(1.05);
-}
+    .user-actions .button {
+        display: block;
+        margin-bottom: 24px;
+    }
 
-.footer-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--link-color);
-    list-style: none;
-}
-
-ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 35px;
-}
-
-.element-text{
-    height: 5vh;
-}
-
-.element-text > a{
-    font-family: "Raleway", sans-serif;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    margin: 0 10px;
-    letter-spacing: 2px;
-    text-decoration: none;
-    color: var(--link-color);
-    cursor: pointer;
-    font-weight: bold;
-    transition: color 0.5s;
-}
-
-.footer-container > p{
-    font-size: 0.75rem;
-    margin: 16px 0;
-    color: var(--link-color);
-    font-weight: 300;
-}
-
-.social-list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 75px;
-}
-
-::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-::-webkit-scrollbar-thumb {
-    background: var(--tertiary-color);
-    border-radius: 10px;
-}
-  
-::-webkit-scrollbar-thumb:hover {
-    background: var(--secondary-color);
+    .login-link {
+        margin: 0;
+    }
 }

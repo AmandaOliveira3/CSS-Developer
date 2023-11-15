@@ -1,39 +1,353 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+@import url('./global.css');
 
-:root {
-    --primary-color: #020228;
-    --secondary-color: #ff00e5;
-    --tertiary-color: #b535f6;
-    --btn-bg-color-gradient: linear-gradient(
-      45deg,
-      #9b34ef 0%,
-      #490cb0 20%,
-      transparent 50%
-    );
-    --btn-link-bg-color: #fff;
-    --btn-link-color: #000;
-    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
-    --divider-bg-color: linear-gradient(
-      90deg,
-      #5516ba,
-      rgba(255, 0, 229, 0.5) 80%
-    );
-    --nav-bg-color: rgba(0, 0, 0, 0.3);
-    --text-color: #fff;
-    --link-color: #9e86ff;
-    --form-bg-color: rgba(211, 211, 211, 0.06);
-    --form-field-bg-color: rgba(0, 0, 0, 0.2);
-    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
-    --form-field-plaehoclder: rgba(255, 255, 255, 0.7);
-    --form-field-error: rgb(255, 76, 76);
+body {
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
 
-    scroll-behavior: smooth;
+.header {
+  position: relative;
+  margin-top: 50px;
+  padding: 100px 0 300px;
+  background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite alternate;
+}
+
+.header::after {
+  content: "";
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(0deg, var(--primary-color), transparent);
+}
+
+.header-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 0 40px;
+}
+
+.header-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  list-style-type: none;
+  align-items: center;
+}
+
+.header-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3rem;
+  position: relative;
+  /* ou absolute, dependendo do contexto */
+  top: -4px;
+}
+
+.header-title-span {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  display: block;
+}
+
+.divider {
+  height: 5px;
+  background: var(--divider-bg-color);
+  width: 70%;
+  max-width: 700px;
+}
+
+
+.header-content {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.header-price {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.subscription-text-small {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.header-subscription-button {
+  animation: wiggle 2.2s linear infinite;
+}
+
+.header-text-small {
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: center;
+  max-width: 300px;
+}
+
+.subscriptions-plans {
+  background-image: url('../images/background-movies-series.png');
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.title-section-subs {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 24px;
+}
+
+.flex-box-plans {
+  display: flex;
+  justify-content: space-around;
+  gap: 80px;
+  margin: 40px 0;
+  perspective: 2000px;
+  perspective-origin: top;
+}
+
+.title-subscription-plans {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+
+.subscriptions-price {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.subscriptions-price .subscription-text-small {
+  color: var(--text-color);
+}
+
+.box-plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  background: var(--card-bg-color);
+  padding: 40px 60px;
+  min-height: 600px;
+  transition: transform 1s ease-in-out;
+}
+
+.subscription-list-item {
+  text-align: left;
+  list-style: none;
+  font-size: 1.25rem;
+  margin-bottom: 14px;
+  padding-left: 14px;
+}
+
+.subscription-list-item::marker {
+  content: "+";
+  font-size: 2rem;
+  margin: 0 8px 0 0;
+}
+
+.title-section {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.contents-container {
+  margin: 100px auto;
+  max-width: 1200px;
+  padding: 24px;
+  text-align: center;
+}
+
+.grid-contents--container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.contents-card {
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid transparent;
+  transition: transform 0.8s, background 0.8s, border 1s;
+}
+
+.contents-card:hover {
+  transform: scale(1.05);
+  border: 2px solid var(--tertiary-color);
+}
+
+.contents-card:hover .contents-image {
+  opacity: 0;
+}
+
+.contents-image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 2s;
+}
+
+.flex-box-plans:has(.box-plan:nth-child(1):hover) .box-plan:nth-child(2) {
+  transform: rotateY(-45deg);
+}
+
+.flex-box-plans:has(.box-plan:nth-child(2):hover) .box-plan:nth-child(1) {
+  transform: rotateY(45deg);
+}
+
+.contents-card:nth-child(1):hover {
+  background-image: url("../images/hbo-hover_0.webp");
+}
+
+.contents-card:nth-child(2):hover {
+  background-image: url("../images/MAX-Hover.webp");
+}
+
+.contents-card:nth-child(3):hover {
+  background-image: url("../images/DC-Hover.webp");
+}
+
+.contents-card:nth-child(4):hover {
+  background-image: url("../images/WB-Hover.webp");
+}
+
+.contents-card:nth-child(5):hover {
+  background-image: url("../images/CN-Hover.png");
+}
+
+.contents-card:nth-child(6):hover {
+  background-image: url("../images/UCL-Hover.webp");
+}
+
+@media (pointer: coarse) {
+  .contents-card:hover {
+    transform: none;
   }
 
-  *{
-    font-family: "Raleway", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  .flex-box-plans:has(.box-plan:nth-child(1):hover) .box-plan:nth-child(2),
+  .flex-box-plans:has(.box-plan:nth-child(2):hover) .box-plan:nth-child(1) {
+    transform: none;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .flex-box-plans {
+    gap: 40px;
+  }
+
+  .grid-contents--container {
+    gap: 32px;
+  }
+}
+
+
+@media screen and (max-width: 1140px) {
+  .flex-box-plans {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscription__card {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .grid-contents--container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .subscriptions-price {
+    font-size: 1.5rem;
+  }
+
+  .title-subscription-plans {
+    font-size: 1rem;
+  }
+
+  .flex-box-plans {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .box-plan {
+    padding: 40px;
+  }
+
+  .grid-contents--container {
+    grid-template-columns: repeat(6, 100%);
+    grid-auto-flow: column;
+    overflow: auto hidden;
+  }
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes wiggle {
+
+  0%,
+  10% {
+    transform: rotate(0);
+  }
+
+  15% {
+    transform: rotate(-15deg);
+  }
+
+  20% {
+    transform: rotate(10deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  30% {
+    transform: rotate(10deg);
+  }
+
+  35% {
+    transform: rotate(-15deg);
+  }
+
+  40%,
+  100% {
+    transform: rotate(0);
+  }
 }
