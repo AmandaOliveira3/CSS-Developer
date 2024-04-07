@@ -1,14 +1,14 @@
-:root{
+:root {
     --bs-link-color: #198754;
     --bs-link-color: #198754;
 }
 
-section{
+section {
     scroll-margin-top: 6rem;
 }
 
 .btn {
-    
+
     --bs-btn-bg: #198754;
     --bs-btn-border-color: #14c643;
     --bs-btn-hover-bg: #14c643;
@@ -20,7 +20,8 @@ main {
     margin-top: 5rem;
 }
 
-.navbar-brand img, footer > img{
+.navbar-brand img,
+footer>img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -31,21 +32,26 @@ main {
 }
 
 
-.carousel-item img{
+.carousel-item img {
     height: 100%;
     object-fit: cover;
-    object-position: center;   
+    object-position: center;
 }
 
-.carousel-item::before{
+.carousel-item::before {
     content: "";
     width: 100%;
     height: 100%;
-    background: linear-gradient(transparent, rgb(31,31,31));
+    background: linear-gradient(transparent, rgb(31, 31, 31));
 }
 
 
 .card-menu-item img {
     height: 300px;
     object-fit: cover;
-  }
+}
+
+.card-menu-item:hover {
+    cursor: pointer;
+    background-color: #f4f4f4;
+}
